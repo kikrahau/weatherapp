@@ -1,3 +1,81 @@
 body {
-	background-image: url(/images/mochaGrunge.png)
+	text-align: center;
+	background-image: url(/images/mochaGrunge.png);
+	color: white;
+	text-shadow: 0 0 5px rgba(0,0,0,1);
+	font-family: Helvetica, Arial;
+	margin: 0;
+	padding: 0;
 }
+header {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 1px 0 3px rgba (0,0,0,0.3);
+}
+#select-image {
+	background-color: rgba(255,255,255,0.3);
+	padding:10px;
+}
+#add-text {
+	background-color: rgba(255,255,255,0.02);
+	padding: 10px;
+	box-shadow: 1px 0 3px rgba (0,0,0,0,0.3);
+}
+#add-text input {
+	width: 400px;
+	text-align: center;
+}
+input, button {
+	font-size: 16px;
+}
+#workspace {
+	width: 600px;
+	min-height: 300px;
+	border:  5px dashed white;
+	margin: 0 auto;
+}
+#workspace img {
+	width: 600px;
+}
+#caption {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-weight: bold;
+	font-family: Helvetica;
+	text-shadow: 0 0 5px rgba(0,0,0,0.6);
+	width: 400px;
+	font-size: 32px;
+	color:red;
+	margin: 0;
+}
+#workspace {
+	position: relative;
+}
+#style-image{
+	background-color: rgba(255,255,255,0.7);
+	padding: 10px;
+	box-shadow: 1px 0 3px rgba (0,0,0,0,0.3)
+}
+#controls {
+	padding: 10px;
+	font-size: 14px;
+}
+input [type="number"]{
+	width: 50px;
+}
+footer {
+	background-color: rgba(255,0,255,0.01);
+	padding: 10px;
+	text-align: left;
+	box-shadow: -1px 0 5px rgba(0,0,0,0.3)
+}
+footer img {
+	float: left;
+	margin-right: 40px;
+
+}
+footer div {
+	margin-top: 10px 0;
+}
+
