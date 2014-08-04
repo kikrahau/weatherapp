@@ -66,7 +66,7 @@ input [type="number"]{
 }
 footer {
 	background-color: rgba(255,0,255,0.01);
-	padding: 10px;
+	padding: 10px 10px 15px 10px;
 	text-align: left;
 	box-shadow: -1px 0 5px rgba(0,0,0,0.3)
 }
@@ -77,5 +77,8 @@ footer img {
 }
 footer div {
 	margin-top: 10px 0;
+	padding-top: 5px;
 }
-
+a:link {
+	color: 
+}
