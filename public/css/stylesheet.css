@@ -2,14 +2,17 @@ body {
 	color:white;
 	font-weight: bold;
 	font-family: 'Rambla', sans-serif;
+	text-shadow: 1.5px 1.5px black;
+
 }
 
 .location {
 	text-align: center;
-	margin-top: 6em;
+	margin-top: 4em;
 }
 .weather {
 	text-align: center;
+	margin-bottom: 2em;
 }
 .city {
 	font-size: 2.5em;
@@ -29,8 +32,17 @@ body {
 .temperature {
 	margin:0px;
 	font-size: 5em;
+	height: 80px;
 
 }
 .icon-container {
 	margin:0px;
+}
+
+
+.quote {
+	margin-top: 3em;
+	margin: 0;
+	text-align: center;
+
 }
