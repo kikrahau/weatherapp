@@ -1,4 +1,8 @@
+
 $('document').ready(function(){
+
+	var imageUrl = (Math.floor(Math.random()* 9)).toString()
+	$('body').css('background-image', 'url(public/images/' + imageUrl + '.jpg)');
 	$.get("http://freegeoip.net/json/", function(data){
 		var lat = data.latitude
 		var lon = data.longitude
@@ -12,8 +16,15 @@ $('document').ready(function(){
 			var temperature = Math.round(data.main.temp - 273.15)
 			$(".temperature").text(temperature)
 			$("<a> °C</a>").appendTo(".temperature")
-
-			console.log(temperature,condition,country,city)
+			var w_icon = data.weather[0].icon
+			console.log(w_icon)
+			$("<img src='http://openweathermap.org/img/w/" + w_icon + ".png' >" ).prependTo(".icon-container")
 		});	
+	$('myOjbect').css('background-image', 'url(' + imageUrl + ')');
 	});
+
+
+
+
+
 });
