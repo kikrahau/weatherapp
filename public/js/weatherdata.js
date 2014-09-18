@@ -8,9 +8,9 @@ var QUOTES = [{quote: "The secret of getting ahead is getting started", author: 
 $('document').ready(function(){
 
 	var imageUrl = (Math.floor(Math.random()* 9)).toString()
-	$('body').css('background-image', 'url(/images/' + imageUrl + '.jpg)');
+	$('html').css('background', 'url(/images/' + imageUrl + '.jpg) no-repeat center center fixed');
 	$(".quote").text(QUOTES[Math.floor(Math.random()* QUOTES.length)].quote)
-	$('<p> - ' + QUOTES[Math.floor(Math.random()* QUOTES.length)].author + '</p>').appendTo(".quote")
+	$('<p> - ' + QUOTES[Math.floor(Math.random()* QUOTES.length)].author + '</p>').appendTo("footer")
 
 	$.get("http://freegeoip.net/json/", function(data){
 		var lat = data.latitude
