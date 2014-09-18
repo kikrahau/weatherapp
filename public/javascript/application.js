@@ -7,6 +7,15 @@ $(document).on('click', '#search-results img', function() {
  	var img = $("<img>").attr('src', url);
   	$("#workspace").append(img);
 });
+function searchKeyPress(e)
+    {
+        // look for window.event in case event isn't passed in
+        if (typeof e == 'undefined' && window.event) { e = window.event; }
+        if (e.keyCode == 13)
+        {
+            document.getElementById('go-search').click();
+        }
+    };
 $(document).on('input', '#text', function(){
 	$("#caption").text($(this).val());
 });

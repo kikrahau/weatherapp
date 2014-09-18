@@ -15,10 +15,9 @@
 	<section id="select-image">
 		<h2>Step 1. Select an image</h2>
 		<p>Enter the keyword to search for images</p>
-		<input id="search-term" type="text">
+		<input id="search-term" type="text" onkeypress="searchKeyPress(event);">
 		<button id="go-search">Let's go</button>
-		<div id="search-results">
-		</div>
+		<div id="search-results"></div>
 		<div id="branding"></div>
 	</section>
 	<section id="add-text">
